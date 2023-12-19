@@ -1,22 +1,22 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
 import Navbar from './components/Navbar/Navbar';
 import Main from './components/Main/Main';
 import Home from './components/Home/Home';
+import './components/frontend.css';
 
 function App() {
-    const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0)
 
-    return (
-        <>
-            <Navbar />
-            <Home />
-            <Main />
-        </>
+  return (
+    <>
+      <div className='App'>
+        <Navbar />
+        <Home />
+        <Main />
+      </div>
+    </>
 
-    )
+  )
 }
 
 export default App
